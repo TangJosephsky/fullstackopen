@@ -1,0 +1,11 @@
+{
+  "name": "dependabot-test-fixture-2",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Second isolated manifest for testing additional Dependabot vulnerability alerts. NOT for production use.",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "minimist": "1.2.5",
+    "serialize-javascript": "1.9.1"
+  }
+}
