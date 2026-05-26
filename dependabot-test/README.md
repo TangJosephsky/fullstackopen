@@ -10,7 +10,7 @@ This directory contains minimal, isolated `package.json` manifests that pin know
 
 | Package | Pinned version | Known vulnerability |
 |---------|---------------|---------------------|
-| [lodash](https://www.npmjs.com/package/lodash) | 4.17.15 | [CVE-2021-23337](https://github.com/advisories/GHSA-35jh-r3h4-6jhm) – Command injection via `_.template` |
+| [lodash](https://www.npmjs.com/package/lodash) | 4.17.21 | ✅ Patched (was 4.17.15 – [CVE-2021-23337](https://github.com/advisories/GHSA-35jh-r3h4-6jhm)) |
 
 ### `fixture-2/package.json`
 
