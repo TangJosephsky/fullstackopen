@@ -14,10 +14,10 @@ This directory contains minimal, isolated `package.json` manifests that pin know
 
 ### `fixture-2/package.json`
 
-| Package | Pinned version | Known vulnerability |
-|---------|---------------|---------------------|
-| [minimist](https://www.npmjs.com/package/minimist) | 1.2.5 | [CVE-2021-44906](https://github.com/advisories/GHSA-xvch-5gv4-984h) – Prototype pollution |
-| [serialize-javascript](https://www.npmjs.com/package/serialize-javascript) | 1.9.1 | [CVE-2020-7660](https://github.com/advisories/GHSA-h9rv-jmmf-4pgx) – Arbitrary code injection |
+| Package | Pinned version | Known vulnerabilities (confirmed by Dependabot) |
+|---------|---------------|--------------------------------------------------|
+| [minimist](https://www.npmjs.com/package/minimist) | 1.2.5 | Prototype pollution – affects `>= 1.0.0, < 1.2.6` (patch: 1.2.6) and `< 0.2.4` (patch: 0.2.4) |
+| [serialize-javascript](https://www.npmjs.com/package/serialize-javascript) | 1.9.1 | RCE via `RegExp.flags`/`Date.prototype.toISOString()` – affects `<= 7.0.2` (patch: 7.0.3); insecure serialization RCE – affects `< 3.1.0` (patch: 3.1.0) |
 
 ## Removing these fixtures
 
